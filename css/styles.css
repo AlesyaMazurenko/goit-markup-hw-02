@@ -1,0 +1,56 @@
+:root {
+  --accent-bg-color: #2f303a;
+  --basic-bg-color: #f5f4fa;
+  --main-white-color: #ffffff;
+  --main-blue-color: #2196f3;
+  --basic-text-color: #757575;
+  --accent-text-color: #212121;
+  --border-color: #eeeeee;
+}
+
+/*разметка шапки сайта*/
+body {
+  background-color: var(--basic-bg-color);
+  color: var(--accent-text-color);
+}
+/*обнуляем точки для всех списков с классом link*/
+.list {
+  list-style: none;
+}
+/*Логотип*/
+.logo {
+  color: var(--main-blue-color);
+}
+/*Навигация*/
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--main-blue-color);
+}
+/*Контакты*/
+.contacts {
+  color: var(--basic-text-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--main-blue-color);
+}
+/*Герой*/
+.hero-title {
+  background-color: var(--accent-bg-color);
+  color: var(--main-white-color);
+}
+.button {
+  background-color: var(--main-blue-color);
+  color: var(--main-white-color);
+}
+/*особенности*/
+.features-list .text {
+  color: var(--basic-text-color);
+}
+/*Команда*/
+.team .text {
+  color: var(--basic-text-color);
+}
+.list.team {
+  background-color: var(--main-white-color);
+}
