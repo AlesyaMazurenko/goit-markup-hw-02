@@ -10,7 +10,7 @@
 
 /*разметка шапки сайта*/
 body {
-  background-color: var(--basic-bg-color);
+  background-color: var(--main-white-color);
   color: var(--accent-text-color);
 }
 /*обнуляем точки для всех списков с классом link*/
@@ -18,20 +18,32 @@ body {
   list-style: none;
 }
 /*Логотип*/
+.logo-main {
+  color: var(--accent-text-color);
+  font-size: 25px;
+}
 .logo {
   color: var(--main-blue-color);
 }
 /*Навигация*/
+.site-nav .link {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--main-blue-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--main-blue-color);
 }
 /*Контакты*/
-.contacts {
+.contacts .contacts-link {
   color: var(--basic-text-color);
 }
-.contacts:hover,
-.contacts:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--main-blue-color);
 }
 /*Герой*/
@@ -39,9 +51,13 @@ body {
   background-color: var(--accent-bg-color);
   color: var(--main-white-color);
 }
-.button {
+.button.primary {
   background-color: var(--main-blue-color);
   color: var(--main-white-color);
+}
+.button:hover .button:focus {
+  background-color: aqua;
+  /* background-color: #188ce8; */
 }
 /*особенности*/
 .features-list .text {
@@ -53,4 +69,18 @@ body {
 }
 .list.team {
   background-color: var(--main-white-color);
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--accent-bg-color);
+  color: var(--main-white-color);
+}
+.logo-footer {
+  color: var(--main-white-color);
+  font-size: 26px;
+}
+/* нужно как-то сбросить курсивный шрифт */
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
 }
