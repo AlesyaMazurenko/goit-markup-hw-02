@@ -39,6 +39,8 @@ body {
 /*Навигация*/
 .site-nav .link {
   color: var(--accent-text-color);
+  font-weight: 500;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -54,6 +56,7 @@ body {
 /*Контакты*/
 .contacts .contacts-link {
   color: var(--basic-text-color);
+  font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -62,8 +65,10 @@ body {
   color: var(--main-blue-color);
 }
 /*Герой*/
-.hero-title {
+.hero {
   background-color: var(--accent-bg-color);
+}
+.hero-title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -105,10 +110,13 @@ body {
 }
 
 /*особенности*/
-.features-title {
+.features-list .features-title {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
+
 .features-list .features-text {
   color: var(--basic-text-color);
   line-height: 1.71;
@@ -149,6 +157,7 @@ body {
 /* Адрес */
 .address {
   font-style: normal;
+  font-size: 14px;
   line-height: 1.71;
 }
 .address-link {
